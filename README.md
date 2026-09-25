@@ -1,66 +1,21 @@
-## Foundry
+# QuantumCore (quantumcore.cloud)
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+> Tokenized, programmable financial core and intent-routing layer with smart contract security guardrails for autonomous AI agents.
 
-Foundry consists of:
+## 1. Network & Deployments (Ethereum Sepolia)
 
-- **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
-- **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
-- **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
-- **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+| Contract | Address | Verification |
+| :--- | :--- | :--- |
+| QuantumVault | 0x82A11A9e65B927B0652A84b331EAeDBa6D11d6f0 | https://sepolia.etherscan.io/address/0x82A11A9e65B927B0652A84b331EAeDBa6D11d6f0 |
+| TestUSD (qUSD) | 0x2E7cf43296Fe3a157c9C28c011629bd0BA0A307E | https://sepolia.etherscan.io/address/0x2E7cf43296Fe3a157c9C28c011629bd0BA0A307E |
 
-## Documentation
+### On-Chain Guardrail Policy
+* Single Transaction Cap: $5.00
+* Rolling Hourly Limit: $20.00
+* Settlement Token: 6 decimal USD stablecoin
 
-https://book.getfoundry.sh/
+## 2. Quickstart
 
-## Usage
-
-### Build
-
-```shell
-$ forge build
-```
-
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+pip install -e .
+python cli.py limits
+python crew_runner.py
