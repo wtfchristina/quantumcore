@@ -1,21 +1,15 @@
 # QuantumCore (quantumcore.cloud)
 
-> Tokenized, programmable financial core and intent-routing layer with smart contract security guardrails for autonomous AI agents.
+> Tokenized, programmable financial core and intent-routing layer with smart contract security guardrails for autonomous AI agents[span_1](start_span)[span_1](end_span).
 
-## 1. Network & Deployments (Ethereum Sepolia)
+[![Network](https://img.shields.io/badge/Network-Ethereum_Sepolia-blue)](https://sepolia.etherscan.io)
+[![Python](https://img.shields.io/badge/Python-3.10%2B-brightgreen)](https://www.python.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-| Contract | Address | Verification |
-| :--- | :--- | :--- |
-| QuantumVault | 0x82A11A9e65B927B0652A84b331EAeDBa6D11d6f0 | https://sepolia.etherscan.io/address/0x82A11A9e65B927B0652A84b331EAeDBa6D11d6f0 |
-| TestUSD (qUSD) | 0x2E7cf43296Fe3a157c9C28c011629bd0BA0A307E | https://sepolia.etherscan.io/address/0x2E7cf43296Fe3a157c9C28c011629bd0BA0A307E |
+**QuantumCore** provides deterministic financial execution rails and risk limits for autonomous LLM agents (CrewAI, AutoGen, LangChain)[span_2](start_span)[span_2](end_span). It enables agents to disburse micro-payments and settle on-chain invoices while enforcing programmatic caps at the smart contract level to prevent rogue spends or prompt-injection fund drains[span_3](start_span)[span_3](end_span).
 
-### On-Chain Guardrail Policy
-* Single Transaction Cap: $5.00
-* Rolling Hourly Limit: $20.00
-* Settlement Token: 6 decimal USD stablecoin
+---
 
-## 2. Quickstart
+## Architecture Overview
 
-pip install -e .
-python cli.py limits
-python crew_runner.py
+
