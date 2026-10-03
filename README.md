@@ -32,3 +32,9 @@ The core settlement engine and digital test currency are deployed and verified o
 git clone [https://github.com/wtfchristina/quantumcore.git](https://github.com/wtfchristina/quantumcore.git)
 cd quantumcore
 pip install -e .
+---
+
+## Platforms & Links
+* 🌐 **Web Platform:** [quantumcore.cloud](https://www.quantumcore.cloud)
+* 💼 **Author:** [Christina Holt](https://www.linkedin.com/in/YOUR-LINKEDIN-USERNAME)
+* 📜 **Smart Contract:** [Sepolia Etherscan](https://sepolia.etherscan.io/address/0x82A11A9e65B927B0652A84b331EAeDBa6D11d6f0)
